@@ -19,7 +19,7 @@ class Calculator extends React.Component {
                       <td className="background-color-grey">7</td>
                       <td className="background-color-grey">8</td>
                       <td className="background-color-grey">9</td>
-                      <td className="background-color-orange">X</td>
+                      <td className="background-color-orange">x</td>
                     </tr>
                     <tr>
                       <td className="background-color-grey">4</td>
