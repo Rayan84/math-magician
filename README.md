@@ -2,8 +2,6 @@
 
 This application is a basic calculator, it demonstrates React library skills beside JSX and CSS.
 
-## 🔗 [Live Link](#)
-
 ## Built With
 
 - JavaScript
@@ -25,7 +23,7 @@ To get a local copy up and running follow these simple example steps.
 
 then to install the project dependencies run
 
-`npm install`
+`yarn`
 
 ### Deployment
 
