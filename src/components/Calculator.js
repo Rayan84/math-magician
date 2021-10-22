@@ -21,12 +21,10 @@ class Calculator extends React.Component {
       let output;
 
         if (this.state.total || this.state.next || this.state.operation){
-          console.log('if is true');
           output = [this.state.total, ' ', this.state.operation, ' ', this.state.next];
           output.map(item => item !== null);
 
         }else{
-          console.log('else is ture');
           output = 0;
         }
       
