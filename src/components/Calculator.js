@@ -1,6 +1,4 @@
-//import { getNodeText } from '@testing-library/dom';
 import React from 'react';
-//import React, {useState} from 'react';
 import '../index.css';
 import Calculate from '../logic/calculate';
 import '../logic/operate';
@@ -10,22 +8,34 @@ class Calculator extends React.Component {
     constructor(props){
       super(props);
       this.state = {
-        total: 0,
-        next: '',
-        operation: '',
+        total: null,
+        next: null,
+        operation: null
       };
     }
     click = (event) => {
       this.setState((obj) => Calculate(obj, event.target.textContent))
     }
-       
+      
     render(){
+      let output;
+
+        if (this.state.total || this.state.next || this.state.operation){
+          console.log('if is true');
+          output = [this.state.total, ' ', this.state.operation, ' ', this.state.next];
+          output.map(item => item !== null);
+
+        }else{
+          console.log('else is ture');
+          output = 0;
+        }
+      
         return <div>
             <div className="calculator-container">
               <table>
                   <tbody>
                     <tr>
-                      <td id="display" colSpan="4">{this.total}</td>
+                      <td id="display" colSpan="4">{ output }</td>
                     </tr>                  
                     <tr>
                       <td className="background-color-grey" onClick={ this.click }>AC</td>

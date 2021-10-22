@@ -1,7 +1,6 @@
 import operate from './operate';
 
 function isNumber(item) {
- console.log('isNumber called...');
  return !!item.match(/[0-9]+/);
 }
 
@@ -15,10 +14,7 @@ function isNumber(item) {
  *   operation:String  +, -, etc.
  */
 export default function calculate(obj, buttonName) {
-  console.log('Calculate is called...');
-  console.log('(' + obj.operation + ', ' + buttonName + ')');
   if (buttonName === 'AC') {
-    console.log("AC clicked...");
     return {
       total: null,
       next: null,
@@ -27,14 +23,11 @@ export default function calculate(obj, buttonName) {
   }
 
   if (isNumber(buttonName)) {
-    console.log( buttonName + ': is a number');
     if (buttonName === '0' && obj.next === '0') {
-      console.log(0 + ' and obj.next is also 0');
       return {};
     }
     // If there is an operation, update next
     if (obj.operation) {
-      console.log(obj.operation + 'is operation, waiting for next number...');
       if (obj.next) {
         return { ...obj, next: obj.next + buttonName };
       }
@@ -54,7 +47,6 @@ export default function calculate(obj, buttonName) {
   }
 
   if (buttonName === '.') {
-    console.log('.')
     if (obj.next) {
       if (obj.next.includes('.')) {
         return { ...obj };
@@ -74,11 +66,7 @@ export default function calculate(obj, buttonName) {
   }
 
   if (buttonName === '=') {
-    console.log(buttonName);
-    console.log(obj.next);
-    console.log(obj.nex);
     if (obj.next && obj.operation) {
-      console.log('operate is called...');
       return {
         total: operate(obj.total, obj.next, obj.operation),
         next: null,
@@ -90,7 +78,6 @@ export default function calculate(obj, buttonName) {
   }
 
   if (buttonName === '+/-') {
-    console.log(buttonName)
     if (obj.next) {
       return { ...obj, next: (-1 * parseFloat(obj.next)).toString() };
     }
@@ -104,9 +91,9 @@ export default function calculate(obj, buttonName) {
 
   // When the user presses an operation button without having entered
   // a number first, do nothing.
-  // if (!obj.next && !obj.total) {
-  //   return {};
-  // }
+  if (!obj.next && !obj.total) {
+    return {};
+  }
 
   // User pressed an operation after pressing '='
   if (!obj.next && obj.total && !obj.operation) {
