@@ -1,6 +1,6 @@
 import React from 'react';
 import '../index.css';
-import Calculate from '../logic/calculate';
+import calculate from '../logic/calculate';
 import '../logic/operate';
 
 
@@ -13,9 +13,9 @@ class Calculator extends React.Component {
         operation: null
       };
     }
-    click = (event) => {
-      this.setState((obj) => Calculate(obj, event.target.textContent))
-    }
+
+    click = (event) => { this.setState((obj) => calculate(obj, event.target.textContent)); }
+
       
     render(){
       let output;
