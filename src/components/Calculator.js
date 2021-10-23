@@ -13,7 +13,7 @@ class Calculator extends React.Component {
         operation: null
       };
     }
-          
+
     render(){
       this.click = (event) => { this.setState((obj) => calculate(obj, event.target.textContent)); }
 
