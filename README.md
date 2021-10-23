@@ -23,13 +23,13 @@ To get a local copy up and running follow these simple example steps.
 
 then to install the project dependencies run
 
-`yarn`
+`npm install`
 
 ### Deployment
 
 to build:
 
-`yarn start`
+`npm start`
 
 in your browser open http://localhost:3000/
 
