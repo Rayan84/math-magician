@@ -2,6 +2,9 @@
 
 This application is a basic calculator, it demonstrates React library skills beside JSX and CSS.
 
+<img src='./src/screenshot.png'>
+
+
 ## Built With
 
 - JavaScript
