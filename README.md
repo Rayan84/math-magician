@@ -2,6 +2,9 @@
 
 This application is a basic calculator, it demonstrates React library skills beside JSX and CSS.
 
+<img src='./src/screenshot.png'>
+
+
 ## Built With
 
 - JavaScript
@@ -23,13 +26,13 @@ To get a local copy up and running follow these simple example steps.
 
 then to install the project dependencies run
 
-`yarn`
+`npm install`
 
 ### Deployment
 
 to build:
 
-`yarn start`
+`npm start`
 
 in your browser open http://localhost:3000/
 
