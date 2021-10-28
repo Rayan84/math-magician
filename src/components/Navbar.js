@@ -9,7 +9,7 @@ const Navbar = () => {
           </div>
 
           <ul className="navbar display-flex">
-            <li><Link to="/">Home</Link></li>
+            <li><Link to="/" activeClassName="selected" activeStyle={{ fontWeight: "bold", color: "orange" }}>Home</Link></li>
             <li><Link to="./calculator">Calculator</Link></li>
             <li><Link to="./quote">Quote</Link></li>
          </ul>

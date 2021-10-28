@@ -13,12 +13,12 @@
   margin-left: 2rem;
 }
 
-.navbar li a:hover {
-  color: white;
-}
-
 .navbar li a {
   text-decoration: none;
+}
+
+.navbar li a:hover {
+  color: white;
 }
 
 .paragraphs-container {
@@ -81,5 +81,4 @@ td:hover {
 
 .quote-container {
   padding-top: 15rem;
-
 }
