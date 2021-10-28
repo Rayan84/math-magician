@@ -13,7 +13,6 @@ This application is a basic calculator, it demonstrates React library skills bes
 - CSS
 - Webpack
 - Eslint
-- Webhint
 - Stylelint
 
 ## Getting Started
@@ -24,7 +23,7 @@ To get a local copy up and running follow these simple example steps.
 
 ### Installation
 
-then to install the project dependencies run
+to install the project dependencies run
 
 `npm install`
 
