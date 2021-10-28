@@ -1,18 +1,61 @@
+.navbar-container {
+  background: rgb(224, 203, 113);
+  background: linear-gradient(18deg, rgba(224, 203, 113, 1) 0%, rgba(219, 143, 81, 1) 0%, rgba(129, 120, 120, 0.5270483193277311) 100%);
+}
+
+.navbar {
+  justify-content: right;
+}
+
+.navbar li {
+  list-style: none;
+  font-size: 2rem;
+  margin-left: 2rem;
+}
+
+.navbar li a:hover {
+  color: white;
+}
+
+.navbar li a {
+  text-decoration: none;
+}
+
+.paragraphs-container {
+  padding-top: 5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 .calculator-container {
-  margin-top: 60px;
+  padding-top: 12rem;
   width: 100%;
   text-align: center;
 }
 
+.display-flex {
+  display: flex;
+}
+
+.justify-content-space-between {
+  justify-content: space-between;
+}
+
+.padding-x-2rem {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+
 table {
   width: 400px;
-  margin: auto;
 }
 
 #display {
   color: wheat;
+  font-size: 1.6rem;
   background-color: grey;
   text-align: end;
+  padding-right: 1rem;
 }
 
 .background-color-grey {
@@ -28,9 +71,15 @@ td {
   padding-top: 10px;
   padding-bottom: 10px;
   cursor: pointer;
+  border-radius: 3px;
 }
 
 td:hover {
   color: white;
   border: solid yellow 1px;
+}
+
+.quote-container {
+  padding-top: 15rem;
+
 }

@@ -27,8 +27,9 @@ function Calculator() {
         output = 0;
     }
       
-    return( <div>
-            <div className='calculator-container'>
+    return( <div className="padding-x-2rem">
+            <div className='calculator-container display-flex justify-content-space-between'>
+              <h2>Let&apos;s do some math!</h2>
               <table>
                 <tbody>
                     <tr>
