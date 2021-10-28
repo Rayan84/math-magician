@@ -1,6 +1,7 @@
 import React from 'react';
 import Calculator from './components/Calculator';
 import Quote from './components/Quote';
+import Home from './components/Home';
 import {
   BrowserRouter as Router,
   Switch,
@@ -23,8 +24,11 @@ import {
            <Route path="/quote">
              <Quote />
            </Route>
-           <Route path="/Calculator">
+           <Route path="/calculator">
              <Calculator />
+           </Route>
+           <Route path="/">
+             <Home />
            </Route>
          </Switch>
 
@@ -32,17 +36,5 @@ import {
       </Router>
     )
 };
-
-// function Home() {
-//   return <h2>Home</h2>;
-// }
-
-// function Quote2() {
-//   return <h2>Quote</h2>;
-// }
-
-// function Calculator2() {
-//   return <h2>Calculator</h2>;
-// }
 
 export default App;
