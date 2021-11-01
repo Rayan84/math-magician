@@ -4,8 +4,8 @@ This application is a basic calculator, it demonstrates React library skills bes
 
 <img src='./src/screenshot.png'>
 
-## Live Link
-[Click here.]()
+## Live Links
+[Click here.](https://math-magician2346.herokuapp.com/)
 
 ## Built With
 
@@ -27,13 +27,13 @@ To get a local copy up and running follow these simple example steps.
 
 to install the project dependencies run
 
-`npm install`
+`yarn`
 
 ### Deployment
 
 to build:
 
-`npm start`
+`yarn start`
 
 in your browser open http://localhost:3000/
 
