@@ -4,6 +4,9 @@ This application is a basic calculator, it demonstrates React library skills bes
 
 <img src='./src/screenshot.png'>
 
+## Live Links
+- [Heroku](https://math-magician2346.herokuapp.com/)
+- [Netlify](https://stoic-lichterman-33dd02.netlify.app/)
 
 ## Built With
 
@@ -25,13 +28,13 @@ To get a local copy up and running follow these simple example steps.
 
 to install the project dependencies run
 
-`npm install`
+`yarn`
 
 ### Deployment
 
 to build:
 
-`npm start`
+`yarn start`
 
 in your browser open http://localhost:3000/
 
