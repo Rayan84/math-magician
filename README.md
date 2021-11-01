@@ -5,7 +5,8 @@ This application is a basic calculator, it demonstrates React library skills bes
 <img src='./src/screenshot.png'>
 
 ## Live Links
-[Click here.](https://math-magician2346.herokuapp.com/)
+[Heroku](https://math-magician2346.herokuapp.com/)
+[Netlify](https://stoic-lichterman-33dd02.netlify.app/)
 
 ## Built With
 
